@@ -1,0 +1,139 @@
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th, {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+th{
+	background-color: #000033; 
+	color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+select {
+  width: 200px; 
+  height: 40px; 
+  -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
+  -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px; 
+  border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
+  background-color: #FFFFFF; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 1px #cbc9c9;
+  margin-top: 13px; 
+  padding-left: 10px;
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.label {
+  display: inline-block;
+  width: 200px;
+  background-color: #FFFF33;
+  padding: 5px 0px 5px 10px;
+  -webkit-border-radius: 4px 0px 0px 4px; 
+  -moz-border-radius: 4px 0px 0px 4px; 
+  border-radius: 4px 0px 0px 4px;
+  color: #000033;
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 0px #000099;
+ box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+#customers {
+
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    color: #000033;
+    
+}
+
+#customers td, #customers th {
+    border: 1px solid #000033;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #FFFF33;}
+
+#customers tr:hover {background-color: #000033; color: #FFFFFF;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: right;
+    background-color: #000033;
+    color: white;
+    text-align: center;
+}
+
+.buscar{
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.buscar:focus {
+    width: 50%;
+}
+
+.button2 {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #000033;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button21 {
+  background-color: #000099;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}

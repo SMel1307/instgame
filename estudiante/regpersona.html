@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>REGISTRO DE ESTUDIANTES</title>
+         <link rel="stylesheet" href="../css/normalize.css">
+    </head>
+    <body>
+<div class="site-wrap">
+      <form role="form" id="form-firebase" autocomplete="off">
+        <h2>REGISTRO DE ESTUDIANTE</h2>
+        <fieldset>
+          <label class="label">Apellido Paterno</label>
+          <input type="text" id="appa" name="appa">
+          <label class="label">Apellido Materno</label>
+          <input type="text" id="apma" name="apma">
+          <label class="label">Nombres</label>
+          <input type="text" id="nombre" name="nombre" required>
+            <label class="label">Fecha de Nacimiento</label>
+          <input type="date" id="fecha" name="fecha" step="1" min="1950-01-01" max="2018-01-01" value="1950-01-01">
+          <label class="label">Direccion</label>
+          <input type="text" id="dir" name="dir">
+          <label class="label">Telefono</label>
+          <input type="number" id="tel" name="tel">
+           <label class="label">Email</label>
+          <input type="email" id="email" name="email" required></fieldset>
+          <div class="gender">
+            <input type="radio" value="Masculino" id="male" name="genero" checked/>
+            <label for="male" class="radio" chec><h4>Masculino</h4></label>
+            <input type="radio" value="Femenino" id="female" name="genero" />
+            <label for="female" class="radio"><h4>Femenino</h4></label>
+           </div>
+
+        <button class="button button1" id="btn-form-firebase">REGISTRAR</button>
+      </form>
+</div>
+<div class="col-md-6" id="persona"></div>
+<script src="./conec.js" type="module"></script>
+    </body>
+</html>
